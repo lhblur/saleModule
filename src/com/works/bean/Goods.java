@@ -106,15 +106,23 @@ public class Goods {
 	public int hashCode() {
 		// TODO Auto-generated method stub
 		if(hashCode == 0) {  
-			int result = 17;  
-			long tolong = Double.doubleToLongBits(price);
+			int result = 17;
+			result = 37*result + barcode.hashCode();
+			result = 37*result + name.hashCode();
+			result = 37*result + unit.hashCode();
+			result = 37*result + category.hashCode();
+			result = 37*result + subcategory.hashCode();
+ 			long tolong = Double.doubleToLongBits(price);
 			result = 37*result + (int) (tolong ^ (tolong >>> 32));
 			result = 37*result + count;
+			result = 37*result + saleType.hashCode();
 			hashCode = result;  
 			}  
 			return hashCode;  
 
 	}
+
+	
 	@Override
 	public boolean equals(Object obj) {
 		// TODO Auto-generated method stub

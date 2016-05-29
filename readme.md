@@ -2,10 +2,9 @@
 
 
 ##使用
-代码可直接运行，包含数据。
+从控制台输入条形码字符串，点击运行即可。
 
 ##数据说明
-*	input.txt:输入样例	
 *	goods.json:全部商品数据	
 *	salelist.json:促销商品数据	
 *	test/goods.json:测试全部商品数据	

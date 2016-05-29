@@ -21,7 +21,7 @@ public class TestMain extends TestCase{
 	@Test
 	public void testGetGoodFromBarcode() {
 		Main.init();
-		Goods good = new Goods("ITEM0000","可乐","瓶","食品","碳酸饮料",3.0,3,"BUY_THREE_GET_ONE_FREE");
+		Goods good = new Goods("ITEM0000","可乐","瓶","食品","碳酸饮料",3.0,3,"NO");
 		assertEquals(good, Main.getGoodFromBarcode("ITEM0000-3"));
 	}
 
